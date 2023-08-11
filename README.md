@@ -2,12 +2,12 @@
 
 Welcome to the hub where students and educators share, contribute and improve.
 ```
-                               _                               _                  _   _         _     
-                              | |     ___   __ _  _ __  _ __  (_) _ __    __ _   | | | | _   _ | |__  
-                              | |    / _ \ / _` || '__|| '_ \ | || '_ \  / _` |  | |_| || | | || '_ \ 
-                              | |___|  __/| (_| || |   | | | || || | | || (_| |  |  _  || |_| || |_) |
-                              |_____|\___| \__,_||_|   |_| |_||_||_| |_| \__, |  |_| |_| \__,_||_.__/ 
-                                                                         |___/                        
+              _                               _                  _   _         _     
+             | |     ___   __ _  _ __  _ __  (_) _ __    __ _   | | | | _   _ | |__  
+             | |    / _ \ / _` || '__|| '_ \ | || '_ \  / _` |  | |_| || | | || '_ \ 
+             | |___|  __/| (_| || |   | | | || || | | || (_| |  |  _  || |_| || |_) |
+             |_____|\___| \__,_||_|   |_| |_||_||_| |_| \__, |  |_| |_| \__,_||_.__/ 
+                                                         |___/                        
 
 ```
 
@@ -28,7 +28,7 @@ When contributing to this project, you must agree that you have authored 100% of
 
 | Project    | Description    |
 | :--- | :--- |
-|||
+|[simple-shell](simple-shell)|Resources of learning and implement the simple shell|
 
 
 ---
