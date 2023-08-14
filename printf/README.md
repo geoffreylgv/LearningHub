@@ -3,4 +3,4 @@ The `printf()` function, short for “print formatted,” is a fundamental funct
 
 | File/folder    | Description    | External resource |
 | :--- | :--- | :--- |
-|[resources](resources)| Links to blogs/articles to implement your own C `printf` function |[Alx & Holberton School: software engineering programme](alxafrica.com) |
+|[resources.md](resources.md)| Links to blogs/articles to implement your own C `printf` function |[Alx & Holberton School: software engineering programme](alxafrica.com) |
