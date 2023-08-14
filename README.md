@@ -29,6 +29,7 @@ When contributing to this project, you must agree that you have authored 100% of
 | Project    | Description    |
 | :--- | :--- |
 |[simple-shell](simple-shell)|Resources of learning and implement the simple shell|
+|[printf](printf)|Print formatted commonly printf(), here some learning materials to implement your own|
 
 
 ---
