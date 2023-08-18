@@ -10,3 +10,4 @@
 - [Brennan's method to write a shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
 - [Shell project step by step by muirujackson](https://medium.com/@muirujackson/shell-project-step-by-step-80aa31a71df0)
 - [Understanding important system calls in C by @noransaber](https://medium.com/@noransaber685/understanding-important-system-calls-in-c-fork-open-read-close-chdir-getline-and-access-2836cc761b17)
+- [shell, the standard command language interpreter](https://manpages.org/sh)
