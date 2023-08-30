@@ -4,3 +4,4 @@ Comprehensive collection and resources of learning and implement the simple shel
 | File/folder    | Description    | External resource |
 | :--- | :--- | :--- |
 |[learning-material.md](learning-material.md)| Links to blogs/articles to implement your own Linux Bourne Shell |[Alx & Holberton School: software engineering programme](alxafrica.com) |
+|[testing.md](testing.md)| How to properly test your code to avoid last minute bad surprises |[Alx & Holberton School: software engineering programme](alxafrica.com) |
