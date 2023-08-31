@@ -16,3 +16,8 @@
 - [Let's Build a Linux Shell [Part I]](https://hackernoon.com/lets-build-a-linux-shell-part-i-bz3n3vg1)
 - [Shell Program Explained](https://www.youtube.com/watch?v=ubt-UjcQUYg)
 - [Unix Processes in C](https://www.youtube.com/watch?v=cex9XrZCU14&list=PLfqABt5AS4FkW5mOn2Tn9ZZLLDwA3kZUY)
+- [System Call Guide](https://youtu.be/2DscbZAdiko?si=cSjEeO3G1skgVdOl)
+- [Essential System Calls and Functions](https://medium.com/@noransaber685/essential-system-calls-and-functions-in-c-programming-explained-strtok-isatty-getpid-malloc-and-30f1f923a10d)
+- [Detecting Memory Leaks](https://medium.com/@muirujackson/step-by-step-guide-to-detect-specific-memory-leaks-issues-with-valgrind-memcheck-b9aa45b967c5)
+- [PLD Session on Simple Shell:](https://mega.nz/file/hxB0GSAS#0NU_eKTfWZ-YQGHxIor-CFscP3E6pXeFdzvJKLwlNns)
+- [PLD SESSION SHELL PT. 2:](https://mega.nz/file/sp4RXIwI#33FtT6bQpYKpGfkgBMWCGKZ1-nNzIdklNIPbwiH2mm8)
