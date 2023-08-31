@@ -6,6 +6,8 @@ In case the sub-folder has a sub-folder, follow the same structure by adding a R
 if you have multiple links, list them.  
 Each README file follows the structure as follows:
 
+!> Always use relative path when refering to a root file or folder.
+
 `README.md`
 
 | Project    | Description    |
@@ -28,9 +30,19 @@ Each README file follows the structure as follows:
 | :--- | :--- | :--- |
 |[Sub-Folder name or file name](Sub-Folder name or file name)| Brief description of the code or of the file | [Link](url to external resource) |
 
+?> The external resource is for a breve explanation or overview of the concept. Link a good resource of overview referring to the specific topic of resource we are adding **(note that it's optional)**
+ 
+?> we should add a link containing an explanation on how to test efficaciously the simple shell or the learning material we've added.
+
+?> Also we can add an external link to maybe a GitHub page that explains how to test it in this case.
+
+?> Another thing, in the way the external link column is optional, we are not obliged to add it, we can leave it blank.
+
+[**See the conversation here**](https://github.com/geoffreylgv/LearningHub/pull/13)
+
 ### How to contriute
 
-#### If you don't have git on your machine, [install it](https://docs.github.com/en/get-started/quickstart/set-up-git).
+#### If you don't have git on your machine, [ install it](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
 ##### Fork this repository
 

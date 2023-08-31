@@ -2,3 +2,4 @@
 - [C programming: Example of C custom printf() function](https://www.w3resource.com/c-programming-exercises/c-snippets/implementing-custom-printf-function-in-c.php#:~:text=Implementin[…]%20is%20encountered)
 - [Creating a Custom printf Function in C: A Step-by-Step Guide by Noran Saber](https://medium.com/@noransaber685/creating-a-custom-printf-function-in-c-a-step-by-step-guide-432fd2ecf48a)
 - [ALX Printf Project: The Power of printf in C Programming by Amara Crystal](https://medium.com/@marameref/alx-printf-project-the-power-of-printf-in-c-programming-a-comprehensive-guide-5087f4677234)
+- [Easy to read documentation of the printf function](https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm)
