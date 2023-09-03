@@ -48,10 +48,11 @@ int main(void)
     printf("String:[%s]\n", "I am a string !");
     _printf("String:[%s%s]\n", "I am a string !", "second string !");
 
-    std = printf("String:[%s%s]\n", "I am a string !", "second string !");
-    ours = _printf("String:[%s%s]\n", "I am a string !", "second string !");
-
+   _printf("String:[%s%s]\n", "I am a string !", "second string !");
     printf("String:[%s %s]\n", "I am a string !", "second string !");
+
+    return (0)
+}
 ```
 
 ## Testing Your Printf Numbers
@@ -65,6 +66,10 @@ int main(void)
 {
 	int len = 0;
 	int len2 = 0;
+
+    len = printf("String:[%s%s]\n", "I am a string !", "second string !");
+    len2 = _printf("String:[%s%s]\n", "I am a string !", "second string !");
+    printf("Length:[%d, %i]\n", len, len2);
 
 	len = _printf("Number: %d, %i\n", 4034, 4034);
 	len2 = printf("Number: %d, %i\n", 4034, 4034);
