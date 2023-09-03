@@ -21,3 +21,6 @@
 - [Detecting Memory Leaks](https://medium.com/@muirujackson/step-by-step-guide-to-detect-specific-memory-leaks-issues-with-valgrind-memcheck-b9aa45b967c5)
 - [PLD Session on Simple Shell By Emmanuel Lomotey](https://mega.nz/file/hxB0GSAS#0NU_eKTfWZ-YQGHxIor-CFscP3E6pXeFdzvJKLwlNns)
 - [PLD SESSION SHELL PT. 2 By Emmanuel Lomotey](https://mega.nz/file/sp4RXIwI#33FtT6bQpYKpGfkgBMWCGKZ1-nNzIdklNIPbwiH2mm8)
+- [Unix Processes in C by CodeVault](https://www.youtube.com/playlist?list=PLfqABt5AS4FkW5mOn2Tn9ZZLLDwA3kZUY)
+- [Unix Processes in C by CodeVault](https://www.youtube.com/playlist?list=PLfqABt5AS4FkW5mOn2Tn9ZZLLDwA3kZUY)
+- [Write Your Own Shell by Jess-Inspired](https://www.youtube.com/playlist?list=PLxIRFba3rzLzxxZMMbrm_-mkI7mV9G0pj)
