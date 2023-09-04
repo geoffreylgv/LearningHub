@@ -1,10 +1,10 @@
 # Testing Your Printf
 
-**Important**
+> **Important**
 
 To ensure that your printf functions in the same manner as the system's printf, here are some methods to test it. This test examines how printf handles characters and strings.
 
-**Note**
+> **Note**
 
 Create a file and copy the following code for testing your printf with:
 
