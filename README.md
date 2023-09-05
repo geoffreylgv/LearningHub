@@ -28,9 +28,9 @@ When contributing to this project, you must agree that you have authored 100% of
 
 | Project    | Description    |
 | :--- | :--- |
-|[Simple-shell](simple-shell)|Resources of learning and implement the simple shell|
-|[Printf](printf)|Print formatted commonly printf(), here some learning materials to implement your own|
-|[DSA: Data Structure and Algorithms](dsa)|Learn Data Structure and Algorithms like never before|
+|[Simple-shell](/simple-shell/README.md)|Resources of learning and implement the simple shell|
+|[Printf](/printf/README.md)|Print formatted commonly printf(), here some learning materials to implement your own|
+|[DSA: Data Structure and Algorithms](/dsa/README.md)|Learn Data Structure and Algorithms like never before|
 
 
 ---
