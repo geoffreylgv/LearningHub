@@ -29,6 +29,10 @@ This is how you use it
 ```
 valgrind --track-origins=yes ./hsh
 ```
+To see full traces of errors with some pointers to the sources pass the following flags...:
+```
+valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --track-origins=yes ./hsh
+```
 When run with the previous command, you get reports on memory leaks and any errors. This is important since the ALX checker uses valgrind to check for memory leaks in your program. You may have to exit, ```CTRL+D``` (assuming you added that handling to your code), before you see memory leaks and errors in some cases.
 
 > **Note**
