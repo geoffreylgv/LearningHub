@@ -1,31 +1,3 @@
-"""
-    If you added a new resource to an existing resources.md or learning-material.md file, just run this script directly.
-    If you added a new resources.md or learning-material.md file, add the path to the file to the RESOURCE_FILE_PATHS list
-    below and then run this script.
-
-    To run this script, open a terminal or command prompt and navigate to the directory that contains this script.
-
-    If you're using a Mac or a Linux distribution, you can run this script from the terminal by typing the following command:
-        python3 sort_resource_links.py
-    If you're using Windows, you can run this script from the command prompt by typing the following command:
-        python sort_resource_links.py
-
-    Note 1: You must have Python 3 installed on your computer to run this script. If you don't have Python 3 installed,
-    you can download it from https://www.python.org/downloads/. Make sure you download the version for your operating
-    system (Windows, Mac, or Linux).
-
-    Note 2: This script assumes that it is at the root of the repository. If you move this script to a different location,
-    you will need to update the RESOURCE_FILE_PATHS list below to include the correct paths to the resources.md and
-    learning-material.md files.
-    
-    Note 3: (FOR NOW) This script only works with Markdown files containing ONLY links, every link must be on a new line and
-    must be in the following format:
-        - [text](link)
-    If you have any links in a different format, this script will not work properly. If you're not sure how to format a
-    Markdown link, see https://www.markdownguide.org/basic-syntax/#links.
-"""
-
-
 import re
 
 
@@ -33,18 +5,21 @@ class MarkdownLink:
     """Represents a Markdown link with text and a URL.
 
     Attributes:
+        title (str): The title of the section in which the link appears.
         text (str): The text associated with the link.
         link (str): The URL to which the link points.
     """
 
-    def __init__(self, text, link):
+    def __init__(self, title, text, link):
         """Initializes a MarkdownLink instance with the provided text and link.
 
         Args:
+            title (str): The title of the section in which the link appears.
             text (str): The text associated with the link.
             link (str): The URL to which the link points.
         """
 
+        self.title = title
         self.text = text
         self.link = link
 
@@ -55,7 +30,7 @@ class MarkdownLink:
             str: A formatted string in the Markdown link format, e.g., "[text](link)".
         """
 
-        return f"[{self.text}]({self.link})"
+        return f"{self.title} / [{self.text}]({self.link})"
 
     def __repr__(self):
         """
@@ -69,7 +44,7 @@ class MarkdownLink:
 
     def __lt__(self, other):
         """
-        Compares two MarkdownLink instances based on their text attributes for sorting.
+        Compares two MarkdownLink instances based on their title and text attributes for sorting.
 
         Args:
             other (MarkdownLink): Another MarkdownLink instance to compare with.
@@ -78,8 +53,7 @@ class MarkdownLink:
             bool: True if this instance's text is less than the other instance's text; False otherwise.
         """
 
-        # Case-insensitive comparison
-        return self.text.lower() < other.text.lower()
+        return (self.title == other.title and self.text.lower() < other.text.lower())
 
 def extract_links_from_md_file(file_content):
     """
@@ -93,12 +67,19 @@ def extract_links_from_md_file(file_content):
     """
 
     links = []
+    current_title = None
+
     for line in file_content.splitlines():
-        match = re.search(r"- \[(.*)\]\((.*)\)", line)  # Match lines like "- [text](link)"
-        if match:
-            text = match.group(1)
-            link = match.group(2)
-            links.append(MarkdownLink(text, link))
+        title_match = re.match(r"####\s+(.*)", line)  # Match titles (assumes #### title format)
+        if title_match:
+            current_title = title_match.group(1)
+        else:
+            link_match = re.search(r"- \[(.*)\]\((.*)\)", line)  # Match lines like "- [text](link)"
+            if link_match:
+                text = link_match.group(1)
+                link = link_match.group(2)
+                links.append(MarkdownLink(current_title, text, link))
+
     return links
 
 def sort_links_in_md_file(markdown_file_path):
@@ -121,13 +102,20 @@ def sort_links_in_md_file(markdown_file_path):
         links.sort()
 
         # Create the new file content
-        new_file_content = "\n".join([repr(link) for link in links])
+        new_file_content = ""
+        current_title = None
+        for link in links:
+            if link.title != current_title:
+                if current_title is not None:
+                    new_file_content += "\n"
+                current_title = link.title
+                new_file_content += f"#### {current_title}\n\n"
+            new_file_content += f"{repr(link)}\n"
 
         # Write the new file content to the file
         with open(markdown_file_path, "w") as f:
             f.write(new_file_content)
 
-        # Print a success message
         print(f"Links in {markdown_file_path} sorted successfully")
 
     # Handle errors
@@ -144,6 +132,7 @@ if __name__ == "__main__":
     RESOURCE_FILE_PATHS = [
         "printf/resources.md",
         "simple-shell/learning-material.md",
+        "dsa/resources/resources.md",
     ]
 
     for resource_file_path in RESOURCE_FILE_PATHS:
