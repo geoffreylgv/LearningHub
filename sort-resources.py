@@ -78,7 +78,8 @@ class MarkdownLink:
             bool: True if this instance's text is less than the other instance's text; False otherwise.
         """
 
-        return self.text < other.text
+        # Case-insensitive comparison
+        return self.text.lower() < other.text.lower()
 
 def extract_links_from_md_file(file_content):
     """
