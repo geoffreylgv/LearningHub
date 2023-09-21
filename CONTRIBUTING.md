@@ -125,3 +125,27 @@ Soon I'll be merging all your changes into the main branch of this project. You 
 Congrats! You just completed the standard _fork -> clone -> edit -> pull request_ workflow that you'll often encounter as a contributor!
 
 Celebrate your contribution and share it with your friends and followers on Twitter and tag the team.
+
+### Adding resources
+- If you added a new resource to an existing `resources.md` or `learning-material.md` file, just run `sort-resources.py` directly.
+    
+- If you added a new `resources.md` or `learning-material.md` file, add the path to the file to the RESOURCE_FILE_PATHS list below and then run `sort-resources.py`.
+
+To run this script, open a terminal or command prompt and navigate to the directory that contains this script.
+
+If you're using a Mac or a Linux distribution, you can run this script from the terminal by typing the following command: `python3 sort_resource_links.py`
+
+If you're using Windows, you can run this script from the command prompt by typing the following command:
+`python sort_resource_links.py`
+
+Note 1: The links must be in the following format: `- [Link text](link URL)`. If you use a different format, the script will not work. 
+
+Note 2: The heading for the sections must use a h4 heading (`####`). If you use a different heading, the script will not work.
+
+Note 3: You must have Python 3 installed on your computer to run this script. If you don't have 
+Python 3 installed, you can download it from https://www.python.org/downloads/. Make sure you 
+download the version for your operating system (Windows, Mac, or Linux).
+
+Note 4: This script assumes that it is at the root of the repository. If you move this script to 
+a different location, you will need to update the RESOURCE_FILE_PATHS list below to include the 
+correct paths to the resources.md and learning-material.md files.
